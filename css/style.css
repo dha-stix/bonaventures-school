@@ -325,7 +325,7 @@ i {
     cursor: pointer;
     display: block;
   }
-footer--contact {
+.footer--contact {
   flex-direction: column;
 }
   nav {
