@@ -3,9 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 1px;
 }
+
 p,
 label,
 input,
@@ -16,18 +18,20 @@ li,
   font-size: 15rem;
   font-family: "Roboto Slab", serif;
 }
+
 h2,
 h3 {
   font-size: 24rem;
   font-family: "Poppins", sans-serif;
 }
+
 .logo-container {
   flex: 0.3;
   height: 10vh;
   padding-left: 20px;
 }
 
-.logo-container > img {
+.logo-container>img {
   height: 100%;
   object-fit: contain;
 }
@@ -67,7 +71,7 @@ nav {
   padding: 20px;
 }
 
-.nav-links > li:hover {
+.nav-links>li:hover {
   border-bottom: 3px solid #eaf6f6;
   color: #a5a4a2;
 }
@@ -162,6 +166,7 @@ nav {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -171,27 +176,31 @@ nav {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .about-us {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 15px;
+  padding: 30px;
   justify-content: space-around;
 }
+
 .about-us img {
-  height: 300px;
-  width: 400px;
+  height: 230px;
   flex: 0.4;
   margin: 15px;
   object-fit: contain;
 }
+
 .section-text h2 {
   margin-bottom: 15px;
   border-bottom: 2px solid #a5a4a2;
+  color: #00acee;
 }
 
 .section-text {
@@ -208,6 +217,7 @@ nav {
   padding: 30px;
   background-color: #f0eeea;
 }
+
 .contact--name {
   flex: 0.5;
   display: flex;
@@ -215,20 +225,24 @@ nav {
   justify-content: center;
   flex-direction: column;
 }
+
 .contact--name h2 {
   font-size: 30rem;
   font-weight: 600;
   color: #66bfbf;
 }
+
 .contact--name p {
   font-size: 18rem;
 }
+
 form {
   flex: 0.5;
   display: flex;
   flex-direction: column;
   padding: 15px;
 }
+
 .input {
   margin: 10px 0;
   padding: 8px;
@@ -237,16 +251,22 @@ form {
   border-bottom: 2px solid #66bfbf;
   background-color: transparent;
 }
+
 .subject {
   text-transform: uppercase;
 }
+
 #message {
   background-color: transparent;
   outline-color: #66bfbf;
   border: 2px solid #66bfbf;
   border-radius: 10px 20px;
   padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
+
 .send-message {
   margin: 20px auto;
   width: 200px;
@@ -259,11 +279,14 @@ form {
   transition: background-color, 0.35s;
   color: #333333;
 }
+
 .send-message:hover {
   color: #8dd8d8;
   background-color: #333333;
 }
+
 footer {
+  width: 100%;
   padding: 15px;
   background-color: #8dd8d8;
   display: flex;
@@ -271,52 +294,66 @@ footer {
   align-items: center;
   color: #333333;
 }
+
 .footer--contact {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
+
 .bold {
   font-weight: 600;
 }
+
 .location {
   flex: 0.6;
 }
+
 .location,
 .social-links {
   padding: 15px;
   flex-wrap: wrap;
 }
+
 .social-links {
   flex: 0.4;
 }
+
 .developer,
 .school {
   color: #fcfcfc;
 }
+
 i {
   font-size: 18rem;
   margin: 0px 5px;
 }
+
 .love {
   color: red;
 }
+
 .bars {
   display: none;
 }
+
 .fa-instagram-square {
   color: #c13584;
 }
+
 .fa-facebook-square {
   color: #3b5998;
 }
+
 .connect {
   margin-bottom: 15px;
 }
+
 .fa-twitter-square {
   color: #00acee;
 }
+
 @media screen and (max-width: 768px) {
   .bars {
     position: absolute;
@@ -327,12 +364,15 @@ i {
     background-color: white;
     padding: 10px
   }
-.footer--contact {
-  flex-direction: column;
-}
+
+  .footer--contact {
+    flex-direction: column;
+  }
+
   nav {
     display: none;
   }
+
   .active {
     display: block;
     position: absolute;
@@ -344,28 +384,34 @@ i {
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
   }
+
   @keyframes nav {
     0% {
       top: 35px;
     }
+
     100% {
       top: 65px;
     }
   }
+
   .nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
+
   .section-image,
   .section-text {
     flex: 1;
   }
+
   .about-us {
     flex-direction: column;
     justify-content: center;
   }
+
   .gallery img {
     order: -1;
   }
@@ -373,10 +419,21 @@ i {
   .contact {
     flex-direction: column;
   }
+
   .contact--name,
   form {
     width: 90%;
     flex: 1;
     justify-content: space-around;
+  }
+
+  .about-us img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width : 400px) {
+  .about-us img {
+    width: 90%;
   }
 }
